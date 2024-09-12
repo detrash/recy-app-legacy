@@ -15,14 +15,14 @@
   "textile": "Textile",
   "landfill_waste": "Landfill Waste",
 
-  "recycler": "Recycler",
-  "hodler": "Hodler",
+  "recycler": "Sustainable treatment agent",
+  "hodler": "Partner",
   "waste_generator": "Waste Generator",
 
   "submit_report_title": "Submit your report",
   "submit_report_description": "Submit a form and earn some cRECYS!",
   "submit_report_button": "Submit",
-  "not_allowed_submit_form": "You can't submit a form being a Hodler",
+  "not_allowed_submit_form": "You can't submit a form being a Partner",
 
   "table_show": "Show",
   "table_search": "Search...",

@@ -15,14 +15,14 @@
   "textile": "Têxtil",
   "landfill_waste": "Residuos de Vertederos",
 
-  "recycler": "Reciclador",
-  "hodler": "Hodler",
+  "recycler": "Agente de tratamiento sostenible",
+  "hodler": "Parceiro",
   "waste_generator": "Generador de Resíduos",
 
   "submit_report_title": "Envíe su informe",
   "submit_report_description": "¡Envíe un formulario y gane algunos cRECYS!",
   "submit_report_button": "Enviar",
-  "not_allowed_submit_form": "No puede enviar un formulario siendo un Hodler",
+  "not_allowed_submit_form": "No puede enviar un formulario siendo un Parceiro",
 
   "table_show": "Muéstrame",
   "table_search": "Búsqueda...",
