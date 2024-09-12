@@ -27,7 +27,7 @@ const celoChain: Chain = {
 const queryClient = new QueryClient();
 
 // 1. Get projectId from https://cloud.walletconnect.com
-const projectId = process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID!;
+const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_ID!;
 
 // 2. Create wagmiConfig
 const metadata = {
