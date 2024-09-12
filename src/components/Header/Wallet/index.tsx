@@ -31,12 +31,11 @@ const Wallet: React.FC<WalletProps> = ({ title }) => {
                 'group flex w-full text-gray-900 items-center rounded-md px-4 py-2 text-sm hover:bg-gray-100',
                 {
                   loading: isLoading && connector.id === pendingConnector?.id,
-                  'hidden sm:flex': connector.id.toUpperCase() === METAMASK_ID,
                   'opacity-30 cursor-not-allowed': !connector.ready,
                 }
               )}
             >
-              <div className="mr-2 h-5 w-5 relative">
+              <div className="relative w-5 h-5 mr-2">
                 <Image
                   alt="MetaMask"
                   src={`/wallet/${connector.id}.webp`}
@@ -68,7 +67,7 @@ const Wallet: React.FC<WalletProps> = ({ title }) => {
           >
             {isConnected ? <p>{formattedAddress}</p> : <p>{title}</p>}
             <WalletIcon
-              className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
+              className="w-5 h-5 ml-2 -mr-1 text-violet-200 hover:text-violet-100"
               aria-hidden="true"
             />
           </Menu.Button>
@@ -82,12 +81,12 @@ const Wallet: React.FC<WalletProps> = ({ title }) => {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute z-50 right-0 mt-2 w-56 origin-top-right rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <Menu.Items className="absolute right-0 z-50 w-56 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             {isConnected ? (
               <Menu.Item>
                 <button
                   onClick={() => disconnect()}
-                  className="group flex w-full text-gray-900 items-center rounded-md px-4 py-2 text-sm hover:bg-gray-100"
+                  className="flex items-center w-full px-4 py-2 text-sm text-gray-900 rounded-md group hover:bg-gray-100"
                 >
                   Disconnect
                 </button>

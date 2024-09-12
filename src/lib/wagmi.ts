@@ -45,11 +45,11 @@ export const WagmiClient = createClient({
     new MetaMaskConnector({
       chains,
     }),
-    new WalletConnectConnector({
-      chains,
-      options: {
-        qrcode: true,
-      },
-    }),
+    // new WalletConnectConnector({
+    //   chains,
+    //   options: {
+    //     qrcode: true,
+    //   },
+    // }),
   ],
 });
