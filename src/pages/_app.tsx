@@ -9,9 +9,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FormProvider } from "src/context/formContext";
 import { apolloClient } from "src/lib/apollo";
-import { WagmiClient } from "src/lib/wagmi";
+import { WagmiAppKitProvider } from "src/lib/wagmi";
 import { APP_NAV_LINKS } from "src/utils/navLinks";
-import { WagmiConfig } from "wagmi";
 import "../styles/globals.scss";
 import Script from "next/script";
 
@@ -40,13 +39,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}
       </Script>
       <ApolloProvider client={apolloClient}>
-        <WagmiConfig client={WagmiClient}>
+        <WagmiAppKitProvider>
           <UserProvider>
             <FormProvider>
               <Component {...pageProps} />
             </FormProvider>
           </UserProvider>
-        </WagmiConfig>
+        </WagmiAppKitProvider>
       </ApolloProvider>
 
       <ToastContainer />
