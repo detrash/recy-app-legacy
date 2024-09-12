@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import CreateFormLogo from 'public/create-form.jpg';
-import { ProfileType } from 'src/graphql/generated/graphql';
-import { APP_NAV_LINKS } from 'src/utils/navLinks';
+import Image from "next/image";
+import Link from "next/link";
+import CreateFormLogo from "public/create-form.jpg";
+import { ProfileType } from "src/graphql/generated/graphql";
+import { APP_NAV_LINKS } from "src/utils/navLinks";
 
 type SubmitFormCardProps = {
   userProfileType: ProfileType;
@@ -30,10 +30,11 @@ const SubmitFormCard: React.FC<SubmitFormCardProps> = ({
       <Image src={CreateFormLogo} alt="create form" />
       <div className="text-center">
         {userProfileType !== ProfileType.Hodler ? (
-          <Link href={APP_NAV_LINKS.SUBMIT_FORM}>
-            <a className="btn btn-primary text-white w-full sm:w-auto text-center">
-              {buttonLabel}
-            </a>
+          <Link
+            href={APP_NAV_LINKS.SUBMIT_FORM}
+            className="btn btn-primary text-white w-full sm:w-auto text-center"
+          >
+            {buttonLabel}
           </Link>
         ) : (
           <p className="text-sm">{notAllowedLabel}</p>

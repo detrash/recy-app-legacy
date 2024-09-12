@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { useUser } from '@auth0/nextjs-auth0';
-import { Menu, Transition } from '@headlessui/react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Fragment } from 'react';
-import { APP_NAV_LINKS } from 'src/utils/navLinks';
+import { useUser } from "@auth0/nextjs-auth0";
+import { Menu, Transition } from "@headlessui/react";
+import Image from "next/image";
+import Link from "next/link";
+import { Fragment } from "react";
+import { APP_NAV_LINKS } from "src/utils/navLinks";
 
 type ProfileProps = {
   profileTitle: string;
@@ -39,10 +39,11 @@ const Profile: React.FC<ProfileProps> = ({ profileTitle, signOutTitle }) => {
       >
         <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
           <Menu.Item>
-            <Link href={APP_NAV_LINKS.PROFILE}>
-              <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                {profileTitle}
-              </a>
+            <Link
+              href={APP_NAV_LINKS.PROFILE}
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            >
+              {profileTitle}
             </Link>
           </Menu.Item>
 

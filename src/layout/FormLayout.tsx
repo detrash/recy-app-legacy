@@ -9,19 +9,16 @@ type FormLayoutProps = {
 };
 
 const FormLayout: React.FC<FormLayoutProps> = ({ children }) => {
-
   return (
     <main className="flex flex-col min-h-screen sm:pb-20 sm:bg-gray-100">
       <header className="hidden sm:navbar">
         <Link href={APP_NAV_LINKS.APP}>
-          <a>
-            <Image
-              src="/detrash-logo.svg"
-              width={100}
-              height={100}
-              alt="DeTrash Logo"
-            />
-          </a>
+          <Image
+            src="/detrash-logo.svg"
+            width={100}
+            height={100}
+            alt="DeTrash Logo"
+          />
         </Link>
 
         <ToggleLanguage />

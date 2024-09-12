@@ -45,15 +45,16 @@ const DashboardHeader: React.FC<DashboardHeaderProps> = ({
               </div>
               <div className="items-center flex-1 hidden sm:flex sm:justify-start">
                 <div className="flex items-center flex-shrink-0">
-                  <Link href={APP_NAV_LINKS.APP}>
-                    <a className="relative w-16 h-16 cursor-pointer">
-                      <Image
-                        layout="fill"
-                        objectFit="cover"
-                        src="/recy-logo.png"
-                        alt="Workflow"
-                      />
-                    </a>
+                  <Link
+                    href={APP_NAV_LINKS.APP}
+                    className="relative w-16 h-16 cursor-pointer"
+                  >
+                    <Image
+                      layout="fill"
+                      objectFit="cover"
+                      src="/recy-logo.png"
+                      alt="Workflow"
+                    />
                   </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
@@ -76,6 +77,7 @@ const DashboardHeader: React.FC<DashboardHeaderProps> = ({
                               ? "page"
                               : undefined
                           }
+                          legacyBehavior
                         >
                           <button
                             className={classNames(
