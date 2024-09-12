@@ -31,11 +31,13 @@ const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_ID!;
 
 // 2. Create wagmiConfig
 const metadata = {
-  name: "AppKit",
+  name: "Recy Network",
   description:
     "Recy Network is a solution of recycling and composting for humanity to live in a world free of waste in nature!",
-  url: "https://web3modal.com", // origin must match your domain & subdomain
-  icons: ["https://avatars.githubusercontent.com/u/37784886"],
+  url: "https://app.recy.life", // origin must match your domain & subdomain
+  icons: [
+    "https://raw.githubusercontent.com/detrash/recy-app-legacy/main/public/recy-logo.png",
+  ],
 };
 
 const chains = [mainnet, celoChain] as const;
