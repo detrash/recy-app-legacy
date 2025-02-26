@@ -28,7 +28,7 @@ const DashboardHeader: React.FC<DashboardHeaderProps> = ({
   const { t } = useTranslation("common");
 
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-primary">
       {({ open }) => (
         <>
           <div className="px-2 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
